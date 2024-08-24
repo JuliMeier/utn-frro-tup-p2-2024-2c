@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    
+}
+.grid-container {
+    display: grid;
+    border: 2px solid black;
+    height: 100vh;
+    text-align: center;
+    grid-template: 
+    "header header header" 100px
+    "navbar main sidebar" auto
+    "footer footer footer" 100px /
+    200px auto 200px;
+
+}
+.header {
+    grid-area: header;
+    background-color: #7695FF;
+
+}
+.navbar {
+    grid-area: navbar;
+    background-color: #9DBDFF;
+
+}
+.main {
+    grid-area: main;
+    background-color: #FFD7C4;
+
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: #FF9874;
+
+}
+.footer {
+    grid-area: footer;
+    background-color: #7695FF;
+
+}
